@@ -7357,7 +7357,7 @@
   <customwidget>
    <class>VispyCanvas</class>
    <extends>QOpenGLWidget</extends>
-   <header>vispy_qt_widget</header>
+   <header>TheAntFarm.vispy_qt_widget</header>
   </customwidget>
  </customwidgets>
  <tabstops>

@@ -12,9 +12,9 @@ from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
-from vispy_qt_widget import VispyCanvas
+from TheAntFarm.vispy_qt_widget import VispyCanvas
 
-import app_resources_rc
+from  . import app_resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):

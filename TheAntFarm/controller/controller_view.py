@@ -1,7 +1,7 @@
 from PySide2.QtCore import QObject
-from shape_core.pcb_manager import PcbObj
-from shape_core.path_manager import MachinePath
-from shape_core.gcode_manager import GCoder
+from TheAntFarm.shape_core.pcb_manager import PcbObj
+from TheAntFarm.shape_core.path_manager import MachinePath
+from TheAntFarm.shape_core.gcode_manager import GCoder
 import os
 import logging
 import traceback
