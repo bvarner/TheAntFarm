@@ -16,3 +16,4 @@ Shapely==1.8.1
 shiboken2==5.15.2.1
 vispy==0.9.4
 opencv-python>=4.5.1.48
+appdirs==1.4.4

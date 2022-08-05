@@ -3,11 +3,13 @@ from .settings_app import AppSettingsHandler
 from .settings_job import JobSettingsHandler
 from .settings_gcode_files import GCodeFilesSettingsHandler
 from .settings_machine import MachineSettingsHandler
-
+from appdirs import AppDirs
 
 class SettingsHandler:
+    dirs = AppDirs("TheAntFarm", "TheAntTeam")
+
     # Configuration file folder
-    CONFIG_FOLDER = os.path.normpath(os.path.join(os.path.dirname(__file__), '../configurations'))
+    CONFIG_FOLDER = os.path.normpath(dirs.user_config_dir)
 
     def __init__(self, main_win):
         if not os.path.isdir(self.CONFIG_FOLDER):

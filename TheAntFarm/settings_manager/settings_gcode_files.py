@@ -1,10 +1,13 @@
+from appdirs import AppDirs
 import configparser
 import os
 
 
 class GCodeFilesSettingsHandler:
+    dirs = AppDirs("TheAntFarm", "TheAntTeam")
+
     # G-Code Files CONFIGURATION DEFAULT VALUES
-    GCODE_FOLDER_DEFAULT = os.path.normpath(os.path.join(os.path.dirname(__file__), '../gcode_temp_dir'))
+    GCODE_FOLDER_DEFAULT = os.path.normpath(os.path.join(dirs.user_data_dir, 'gcode_temp_dir'))
 
     def __init__(self, config_folder):
         if not os.path.isdir(self.GCODE_FOLDER_DEFAULT):
